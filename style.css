@@ -309,12 +309,14 @@ a {
 }
 .experience__location {
   font-size: 0.8em;
+  font-weight: 500;
 }
 .experience__description {
   max-height: 5.5em;
   overflow: hidden;
   text-overflow: clip;
   position: relative;
+  color: rgb(0 0 0 / 0.6);
 }
 .experience__description-more {
   position: absolute;
@@ -323,4 +325,5 @@ a {
   z-index: 1;
   background-color: white;
   right: 0;
+  font-weight: 500;
 }
