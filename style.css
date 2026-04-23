@@ -68,9 +68,20 @@ textarea {
 .header__message-notification-wrapper {
   width: 50px;
   height: 60%;
+  position: relative;
 }
 .header__message-notification-image {
   max-height: 100%;
   display: block;
   justify-self: center;
+}
+.header_message-notification-bubble {
+  max-height: 20px;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  border: double 1px white;
+  z-index: 1;
 }
