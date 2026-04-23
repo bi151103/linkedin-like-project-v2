@@ -40,6 +40,7 @@ a {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 .header__avatar-wrapper {
   width: 50px;
@@ -194,4 +195,32 @@ a {
   height: 1em;
   width: 1em;
   margin-right: 5px;
+}
+
+.private {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.private__title {
+}
+.private__title--italic {
+  font-style: italic;
+}
+.private__rows {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+}
+.private__profile-viewed {
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.private__search-appearance {
+  padding-left: 10px;
+  padding-top: 10px;
+  border-left: 1px solid #ebebeb;
+}
+.private__content-title {
+  color: #0a66c2;
 }
