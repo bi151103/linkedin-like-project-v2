@@ -179,6 +179,19 @@ a {
   padding: 20px 10px;
   margin-top: 10px;
 }
-.feature__content {
+.featured__content {
   padding-top: 10px;
+}
+.featured__add-featured {
+  display: inline-block;
+  padding-top: 20px;
+}
+.featured__add-featured::before {
+  content: "";
+  background-image: url(./images/icons8-plus-100.png);
+  background-size: 100%;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-right: 5px;
 }
