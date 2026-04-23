@@ -29,17 +29,23 @@ button,
 textarea {
   border: none;
 }
+a {
+  text-decoration: none;
+  color: #0a66c2;
+}
 .header {
   height: 50px;
   background-color: white;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 .header__avatar-wrapper {
   width: 50px;
   height: 60%;
 }
-.header__avatar-image {
+.header__avatar-img {
   max-height: 100%;
   display: block;
   justify-self: center;
@@ -70,7 +76,7 @@ textarea {
   height: 60%;
   position: relative;
 }
-.header__message-notification-image {
+.header__message-notification-img {
   max-height: 100%;
   display: block;
   justify-self: center;
@@ -83,5 +89,96 @@ textarea {
   display: inline-block;
   border-radius: 50%;
   border: double 1px white;
-  z-index: 1;
+}
+.summary__background-wrapper {
+  position: relative;
+  background-color: white;
+}
+.summary__background-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.summary__background-setting-btn {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30%;
+  margin: 20px;
+}
+.summary__actions {
+  height: 50px;
+  background-color: white;
+  padding: 0 10px;
+  display: flex;
+}
+.summary__actions-left {
+  width: 100px;
+  position: relative;
+}
+.summary__actions-avatar-wrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  bottom: 0;
+  border: double 2px #5f6163;
+  border-radius: 50%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.summary__actions-avatar-img {
+  width: 50px;
+}
+.summary__actions-avatar-text {
+  font-size: 0.8em;
+}
+.summary__actions-right {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  align-items: end;
+}
+.summary__actions-right-img {
+  width: 25px;
+  height: 25px;
+}
+.summary__profile-info {
+  background-color: white;
+  padding: 30px 10px;
+}
+.summary__about {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.summary__about-title {
+  display: flex;
+}
+.summary__about-img {
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+}
+.summary__about-content {
+  padding-top: 10px;
+}
+.dot::before {
+  content: "\00b7\00a0";
+}
+
+.featured {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.feature__content {
+  padding-top: 10px;
 }

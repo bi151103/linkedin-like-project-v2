@@ -9,33 +9,94 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__avatar-wrapper">
-        <a href="#">
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="header__avatar-wrapper">
+          <a href="#">
+            <img
+              class="header__avatar-img"
+              src="./images/icons8-profile-100.png"
+            />
+          </a>
+        </div>
+        <div class="header__search-wrapper">
+          <img class="header__magnifier" src="./images/icons8-search-100.png" />
+          <input class="header__input" placeholder="Search" />
+        </div>
+        <div class="header__message-notification-wrapper">
+          <a href="#">
+            <img
+              class="header__message-notification-img"
+              src="./images/icons8-chat-bubble-100.png"
+            />
+            <img
+              class="header_message-notification-bubble"
+              src="./images/icons8-circled-1-100.png"
+            />
+          </a>
+        </div>
+      </header>
+      <section class="summary">
+        <div class="summary__background-wrapper">
           <img
-            class="header__avatar-image"
-            src="./images/icons8-profile-100.png"
+            class="summary__background-img"
+            src="./images/background-image-cutted.jpg"
           />
-        </a>
-      </div>
-      <div class="header__search-wrapper">
-        <img class="header__magnifier" src="./images/icons8-search-100.png" />
-        <input class="header__input" placeholder="Search" />
-      </div>
-      <div class="header__message-notification-wrapper">
-        <a href="">
-          <img
-            class="header__message-notification-image"
-            src="./images/icons8-chat-bubble-100.png"
-          />
-          <img
-            class="header_message-notification-bubble"
-            src="./images/icons8-circled-1-100.png"
-          />
-        </a>
-      </div>
-    </header>
-    <main></main>
+          <a href="#">
+            <img
+              class="summary__background-setting-btn"
+              src="./images/icons8-setting-100.png"
+            />
+          </a>
+        </div>
+        <div class="summary__actions">
+          <a class="summary__actions-left" href="#">
+            <div class="summary__actions-avatar-wrapper">
+              <img
+                class="summary__actions-avatar-img"
+                src="./images/icons8-camera-100.png"
+              />
+              <span class="summary__actions-avatar-text">Add Photo</span>
+            </div>
+          </a>
+          <div class="summary__actions-right">
+            <img
+              class="summary__actions-right-img"
+              src="./images/icons8-share-100.png"
+            />
+            <a href="#">
+              <img
+                class="summary__actions-right-img"
+                src="./images/icons8-edit-100.png"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="summary__profile-info">
+          <h3 class="summary__profile-name">Phuc Dang</h3>
+          <p>Tester</p>
+          <p>CODE LEAP</p>
+          <p>
+            Vietnam <span class="dot"></span> <a href="#">74 Connections</a>
+          </p>
+        </div>
+      </section>
+      <section class="summary__about">
+        <div class="summary__about-title">
+          <h4>About</h4>
+          <img class="summary__about-img" src="./images/icons8-edit-100.png" />
+        </div>
+        <p class="summary__about-content">As early of 2026</p>
+      </section>
+    </div>
+    <main>
+      <section class="featured">
+        <h4>Featured</h4>
+        <p class="feature__content">
+          Some content is only available on desktop or in the LinkedIn App.
+        </p>
+      </section>
+    </main>
     <!-- <aside></aside> -->
     <footer></footer>
   </body>
