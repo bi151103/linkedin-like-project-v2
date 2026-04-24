@@ -30,6 +30,7 @@ button,
 textarea {
   border: none;
   font: inherit;
+  background-color: transparent;
 }
 button {
   cursor: pointer;
@@ -68,7 +69,6 @@ a {
   max-height: 60%;
 }
 .header__input {
-  background-color: transparent;
   outline: none;
   flex: 1;
   height: 60%;
@@ -199,6 +199,7 @@ a {
 .add-button-with-plus-sign {
   display: inline-block;
   margin-top: 20px;
+  font-weight: 500;
 }
 .add-button-with-plus-sign::before {
   content: "";
@@ -406,7 +407,6 @@ a {
   position: relative;
 }
 .add-education__close-btn {
-  background-color: transparent;
   display: block;
   margin-left: auto;
   height: min-content;
@@ -430,7 +430,6 @@ a {
   padding: 0 40px;
 }
 .add-education__main-btn {
-  background-color: transparent;
   color: inherit;
   margin-top: 10px;
   line-height: 3;
@@ -442,6 +441,102 @@ a {
 }
 .add-education__main-btn:hover {
   background-color: rgb(112 181 249 / 0.1);
+}
+
+.volunteer {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.skill {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.skill__title {
+  display: flex;
+}
+.skill__edit {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+}
+.skill__list {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.skill__list-item {
+  font-weight: 500;
+}
+.skill__list-item::after {
+  content: "\00b7";
+  font-weight: bold;
+  margin: 0 10px;
+}
+.skill__list-item:last-child::after {
+  content: "";
+}
+
+.recommendation {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.accomplishment {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.accomplishment__rows {
+  display: flex;
+  margin-top: 10px;
+}
+.accomplishment__number-of-items {
+  width: 55px;
+  height: 55px;
+  font-size: 2em;
+  text-align: right;
+  margin-right: 10px;
+}
+.accomplishment__type {
+  font-weight: 500;
+  color: rgb(0 0 0 / 0.9);
+}
+.accomplishment__details {
+  width: calc(100% - 55px);
+}
+.accomplishment__item {
+  margin: 10px 0;
+  display: flex;
+  align-items: start;
+}
+.accomplishment__name {
+  color: rgb(0 0 0 / 0.9);
+  font-weight: 500;
+}
+.accomplishment__item-right {
+  width: 25px;
+  margin-left: auto;
+}
+.accomplishment__edit {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.accomplishment__see-more-btn {
+  position: relative;
+  color: #0a66c2;
+  font-weight: 500;
+}
+.accomplishment__see-more-btn-chevron {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
 }
 
 .nav-bottom {
@@ -471,7 +566,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: end;
+  justify-content: center;
   color: inherit;
   position: relative;
 }
