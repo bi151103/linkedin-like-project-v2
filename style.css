@@ -23,6 +23,7 @@ html {
     "Segoe UI Symbol";
   background-color: #f4f2ee;
   color: #5f6163;
+  font-size: 14px;
 }
 input,
 button,
@@ -233,12 +234,11 @@ a {
   padding-top: 10px;
   border-left: 1px solid #ebebeb;
 }
-.private__rows-content {
-  font-size: 0.8em;
-}
 .private__content-title {
   color: #0a66c2;
-  font-size: 1em;
+}
+.private__rows-content {
+  font-size: 0.8em;
 }
 
 .activity {
@@ -330,11 +330,12 @@ a {
   color: rgb(0 0 0 / 0.9);
   font-weight: 500;
 }
+.experience__details {
+}
 .experience__details-job-title-rows {
   display: flex;
   align-items: center;
 }
-
 .experience__details-job-title {
   color: rgb(0 0 0 / 0.9);
   font-weight: 500;
@@ -369,6 +370,33 @@ a {
   right: 0;
   font-weight: 500;
   color: #5f6163;
+}
+
+.education {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.education__item {
+  margin-top: 10px;
+  display: flex;
+  color: #5f6163;
+}
+.education__company-thumb {
+  height: 55px;
+  aspect-ratio: 1;
+  align-self: start;
+  margin-right: 10px;
+}
+.education__name {
+  color: rgb(0 0 0 / 0.9);
+  font-weight: 500;
+}
+.education__edit {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
 }
 
 .nav-bottom {
