@@ -398,6 +398,51 @@ a {
   height: 25px;
   margin-left: auto;
 }
+.add-education {
+  background-color: white;
+  padding: 20px 10px;
+  border-top: 1px solid #ebebeb;
+  text-align: center;
+  position: relative;
+}
+.add-education__close-btn {
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  height: min-content;
+}
+.add-education__close-btn-img {
+  width: 25px;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.add-education__main-img {
+  width: 55px;
+  aspect-ratio: 1;
+  vertical-align: bottom;
+}
+.add-education__long-text {
+  font-size: 0.8em;
+  padding: 0 40px;
+}
+.add-education__main-btn {
+  background-color: transparent;
+  color: inherit;
+  margin-top: 10px;
+  line-height: 3;
+  display: block;
+  width: 100%;
+  border: 1px solid #0a66c2;
+  border-radius: 20em;
+  font-weight: 500;
+}
+.add-education__main-btn:hover {
+  background-color: rgb(112 181 249 / 0.1);
+}
 
 .nav-bottom {
   height: 50px;
