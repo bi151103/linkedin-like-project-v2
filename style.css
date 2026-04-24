@@ -572,6 +572,57 @@ a {
   overflow-wrap: break-word;
 }
 
+.other-profiles {
+  padding: 20px 10px;
+  border-top: 1px solid #b2b2b2;
+}
+.profile-row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+.profile__avatar {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.profile__name {
+  font-weight: 500;
+  color: rgb(0 0 0 / 0.9);
+}
+.profile__relationship {
+  font-size: 0.8em;
+}
+.profile__headline {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+}
+.profile__msg-btn,
+.profile__add-connection-btn {
+  margin-left: auto;
+  min-width: 35px;
+  min-height: 35px;
+  border: 1.5px solid #b2b2b2;
+  border-radius: 50%;
+}
+.profile__msg-btn:hover,
+.profile__add-connection-btn:hover {
+  background-color: rgb(0 0 0 / 0.04);
+}
+.profile__msg-btn-img,
+.profile__add-connection-btn-img {
+  width: 1.2em;
+  aspect-ratio: 1;
+  vertical-align: bottom;
+}
+
 .nav-bottom {
   height: 50px;
   background-color: white;
