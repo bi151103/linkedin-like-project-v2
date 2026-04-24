@@ -468,6 +468,7 @@ a {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  padding-left: 10px;
 }
 .skill__list-item {
   font-weight: 500;
