@@ -333,7 +333,7 @@ a {
 }
 .experience__details {
 }
-.experience__details-job-title-rows {
+.experience__details-job-title-row {
   display: flex;
   align-items: center;
 }
@@ -454,7 +454,6 @@ a {
   padding: 20px 10px;
   margin-top: 10px;
 }
-
 .skill__title {
   display: flex;
 }
@@ -493,7 +492,7 @@ a {
   padding: 20px 10px;
   margin-top: 10px;
 }
-.accomplishment__rows {
+.accomplishment__row {
   display: flex;
   margin-top: 10px;
 }
@@ -537,6 +536,40 @@ a {
   width: 1em;
   height: 1em;
   vertical-align: middle;
+}
+
+.contact {
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.contact__title {
+  display: flex;
+}
+.contact__edit {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+}
+.contact__row {
+  display: flex;
+  margin: 10px 0;
+}
+.contact__icon {
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1;
+  margin: 0 10px;
+}
+.contact__type {
+  font-weight: 500;
+}
+.contact__info {
+  max-width: calc(100% - 40px);
+}
+.content__info-link {
+  overflow-wrap: break-word;
 }
 
 .nav-bottom {
