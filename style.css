@@ -28,6 +28,10 @@ input,
 button,
 textarea {
   border: none;
+  font: inherit;
+}
+button {
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -166,7 +170,8 @@ a {
 .summary__about-title {
   display: flex;
 }
-.summary__about-img {
+.summary__about-edit {
+  display: block;
   width: 25px;
   height: 25px;
   margin-left: auto;
@@ -175,7 +180,7 @@ a {
   padding-top: 10px;
 }
 .dot::before {
-  content: "\00b7\00a0";
+  content: "\00b7";
 }
 
 .featured {
@@ -290,7 +295,6 @@ a {
 .experience__summary {
   margin-top: 10px;
   display: flex;
-  gap: 10px;
   align-items: center;
   color: #5f6163;
 }
@@ -298,14 +302,44 @@ a {
   height: 55px;
   aspect-ratio: 1;
   align-self: start;
+  margin-right: 10px;
+}
+.experience__description-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.big-dot-wrapper {
+  flex-basis: 55px;
+  margin-right: 10px;
+}
+.big-dot {
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .experience__company-name {
   color: rgb(0 0 0 / 0.9);
   font-weight: 500;
 }
+.experience__details-job-title-rows {
+  display: flex;
+  align-items: center;
+}
+
 .experience__details-job-title {
   color: rgb(0 0 0 / 0.9);
   font-weight: 500;
+}
+.experience__details-job-edit {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
 }
 .experience__location {
   font-size: 0.8em;
@@ -314,9 +348,13 @@ a {
 .experience__description {
   max-height: 5.5em;
   overflow: hidden;
-  text-overflow: clip;
   position: relative;
   color: rgb(0 0 0 / 0.6);
+}
+.experience__description-wrapper {
+  border-left: 1px solid #b2b2b2;
+  margin-left: 27.5px;
+  padding-left: calc(27.5px + 10px);
 }
 .experience__description-more {
   position: absolute;
@@ -326,4 +364,5 @@ a {
   background-color: white;
   right: 0;
   font-weight: 500;
+  color: #5f6163;
 }
