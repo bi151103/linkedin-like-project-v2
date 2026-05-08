@@ -1,1 +1,2 @@
-Vanilla HTML+CSS
+- Vanilla HTML+CSS
+- Live demo: https://bi151103.github.io/linkedin-like-project-v2/
